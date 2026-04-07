@@ -16,9 +16,20 @@ export default function Navbar() {
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
+        {/* Logo */}
         <a href="#" className={styles.logo}>
-          <img src="/logo.png" alt="MH Web Designs" className={styles.logoImg} />
-          <span className={styles.logoText}>Web Designs</span>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <polygon points="14,2 26,9 26,21 14,28 2,21 2,9" fill="none" stroke="url(#lg)" strokeWidth="1.5"/>
+            <polygon points="14,7 21,11 21,19 14,23 7,19 7,11" fill="url(#lg)" opacity="0.15"/>
+            <circle cx="14" cy="15" r="3" fill="url(#lg)"/>
+            <defs>
+              <linearGradient id="lg" x1="2" y1="2" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#1a6fff"/>
+                <stop offset="1" stopColor="#00d68f"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span className={styles.logoText}>MH Web Designs</span>
         </a>
 
         {/* Desktop Links */}

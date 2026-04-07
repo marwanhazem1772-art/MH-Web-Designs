@@ -28,26 +28,19 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.logoImg {
-  height: 28px;
-  width: auto;
-  object-fit: contain;
-}
-
 .logoText {
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #fff;
-  opacity: 0.9;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  padding-left: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  background: linear-gradient(90deg, #1a6fff, #00d68f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .links {
